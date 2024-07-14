@@ -53,68 +53,6 @@ a:active {
 }
 
 
-.wrapper {
-  display: inline-flex;
-  width: 100%;
-  background-color: #343f4f;
-  padding-left: 10px;
-}
-
-.wrapper .static-txt {
-  color: #fff;
-  font-size: 60px;
-  font-weight: 400;
-}
-
-.wrapper .dynamic-txts {
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
-  overflow: hidden;
-}
-
-.dynamic-txts li {
-  color: #c8102e;
-  list-style: none;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
-}
-
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-
-.dynamic-txts li span {
-  position: relative;
-}
-
-.dynamic-txts li span::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #343f4f;
-  border-left: 2px solid #c8102e;
-  animation: typing 3s steps(14) infinite;
-}
-
-@keyframes typing {
-
-  40%,
-  60% {
-    left: calc(100% + 30px);
-  }
-
-  100% {
-    left: 0;
-  }
-}
 
 .header h1 {
   font-size: 100px;
@@ -158,7 +96,7 @@ a:active {
 section {
   width: 100%;
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 100px;
 }
 
 section .heading .title {
@@ -212,7 +150,7 @@ section .container {
 .about .items .item .content p {
   font-size: 18 px;
   line-height: 25px;
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
   text-indent: 50px;
 }
 
@@ -592,48 +530,50 @@ html {
 }
 
 @media (max-width:750px) {
-  .wrapper {
-    display: inline-flex;
-    width: 100%;
-    background-color: #343f4f;
-    padding-left: 10px;
+
+  .header h1 {
+    font-size: 45px;
+    font-weight: 600;
   }
   
-  .wrapper .static-txt {
-    color: #fff;
-    font-size: 35px;
+  .header .subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .services .items {
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+  }
+
+  section .heading .title {
+    font-size: 25px;
     font-weight: 400;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 5px;
   }
-  
-  .wrapper .dynamic-txts {
-    margin-left: 15px;
-    height: 6%;
-    line-height: 50px;
-    overflow: hidden;
-  }
-  
-  .dynamic-txts li {
-    color: #c8102e;
-    list-style: none;
-    font-size: 35px;
+
+  section .heading .subtitle {
+    position: relative;
+    font-size: 15px;
     font-weight: 500;
-    position: relative;
-    animation: none;
+    color: #343f4f;
+    letter-spacing: -1px;
+    padding-top: 5px;
+    padding-left: 0rem;
   }
-  
-  
-  
-  .dynamic-txts li span {
-    position: relative;
+
+  .services .items .item p {
+    font-size: 12px;
+    line-height: 23px;
+    padding: 1rem 0rem;
+    color: #f1f1f1;
+    text-align: center;
   }
-  
-  .dynamic-txts li span::after {
-    content: '';
-    position: absolute;
-    height: 0%;
-    width: 0%;
-    background: #343f4f;
-    animation: none;
-  }
-  
 }
