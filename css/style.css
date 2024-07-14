@@ -18,12 +18,12 @@ h4 {
 
  /* unvisited link */
  a:link {
-  color: white;
+  color: lightgreen;
 }
 
 /* visited link */
 a:visited {
-  color: #dbdcdd;
+  color: lightseagreen;
 }
 
 /* mouse over link */
@@ -556,6 +556,39 @@ footer .social .s-link:hover {
   color: #fff;
   background-color: #111;
   border-radius: 50%;
+}
+
+/* BACK TO TOP */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: darkgray;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	color: white;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: grey;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
 }
 
 @media (max-width:750px) {
