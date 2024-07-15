@@ -37,7 +37,7 @@ a:active {
 } 
 
 .header {
-  background: linear-gradient(#00000044, #111111bb), url(./images/selfie2blackoffset.png);
+  background: linear-gradient(#00000044, #111111bb), url(./../images/selfie2blackoffset.png);
   background-position: bottom left;
   background-repeat: no-repeat;
   background-attachment: fixed;
