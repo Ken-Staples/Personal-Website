@@ -496,6 +496,61 @@ footer .social .s-link:hover {
   border-radius: 50%;
 }
 
+.landacknowledgement {
+  background-color: #011c94;
+}
+
+.landacknowledgement .title,
+.landacknowledgement .subtitle {
+  color: #fff;
+}
+
+.landacknowledgement .items {
+  padding: 2rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 4rem;
+}
+
+.landacknowledgement .items .item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  height: 500px;
+  cursor: pointer;
+}
+
+.landacknowledgement .items .item img {
+  width: 200px;
+  object-fit: cover;
+}
+.landacknowledgement .items .item:hover::after {
+  width: 100%;
+}
+
+.landacknowledgement .items .item h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 23px;
+  padding: 0rem 0rem;
+  color: #fff;
+  text-align: center;
+  width: fit-content;
+  padding-top: 1.6rem;
+}
+
+.landacknowledgement .items .item p {
+  font-size: 16px;
+  line-height: 23px;
+  padding: 1rem 0rem;
+  color: #f1f1f1;
+  text-align: center;
+}
+
 /* BACK TO TOP */
 
 html {
@@ -579,6 +634,22 @@ html {
   .factoids .items .item p {
     font-size: 15px;
     line-height: 23px;
+    padding: 1rem 0rem;
+    color: #f1f1f1;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  .landacknowledgement .items {
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+  }
+
+  .landacknowledgement .items .item p {
+    font-size: 12px;
+    line-height: 15px;
     padding: 1rem 0rem;
     color: #f1f1f1;
     text-align: center;
